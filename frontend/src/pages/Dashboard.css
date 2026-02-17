@@ -1,0 +1,132 @@
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+button.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #1e40af;
+}
+
+button.danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+button.danger:hover {
+  background-color: #991b1b;
+}
+
+button.logout {
+  background-color: #374151;
+  color: white;
+  float: right;
+}
+
+button.logout:hover {
+  background-color: #111827;
+}
+
+/* Products Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Product Card */
+.product,
+.card {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Low Stock Highlight */
+.low-stock {
+  border: 2px solid #dc2626;
+  background-color: #fee2e2;
+}
+
+.warning {
+  color: #dc2626;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+/* Divider */
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  button.logout {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
